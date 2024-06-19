@@ -1,0 +1,25 @@
+object db: Tdb
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object database: TFDConnection
+    Params.Strings = (
+      'Database=C:\Users\miki\Desktop\New folder\sqlite.db'
+      'DriverID=SQLite')
+    Connected = True
+    LoginPrompt = False
+    Left = 160
+    Top = 144
+  end
+  object qtemp: TFDQuery
+    Connection = database
+    Left = 304
+    Top = 224
+  end
+end

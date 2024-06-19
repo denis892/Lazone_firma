@@ -1,0 +1,226 @@
+object formRegister: TformRegister
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 521
+  ClientWidth = 493
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object footer: TLayout
+    Align = Bottom
+    Position.Y = 313.000000000000000000
+    Size.Width = 493.000000000000000000
+    Size.Height = 208.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object tekstZaposleniLogin: TText
+      Align = Center
+      Size.Width = 101.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Vec imate nalog? Prijavi se!'
+      OnClick = tekstZaposleniLoginClick
+    end
+  end
+  object header: TLayout
+    Align = Top
+    Size.Width = 493.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Text2: TText
+      Align = Center
+      Margins.Bottom = 340.000000000000000000
+      Size.Width = 192.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Register'
+      TextSettings.Font.Family = '(Default)'
+      TextSettings.Font.Size = 36.000000000000000000
+    end
+  end
+  object klijent: TLayout
+    Align = Client
+    Size.Width = 493.000000000000000000
+    Size.Height = 269.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object usernameLinija: TLine
+      Align = Center
+      LineType = Bottom
+      Margins.Bottom = 100.000000000000000000
+      Size.Width = 264.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      object usernameLabel: TLabel
+        Align = Top
+        StyledSettings = [FontColor]
+        Size.Width = 264.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Username:'
+        TabOrder = 0
+      end
+      object editUsername: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        StyleLookup = 'transparentedit'
+        TabOrder = 1
+        Size.Width = 264.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object sifraLinija: TLine
+      Align = Center
+      LineType = Bottom
+      Size.Width = 264.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      object labelSifra: TLabel
+        Align = Top
+        StyledSettings = [FontColor]
+        Margins.Right = 100.000000000000000000
+        Size.Width = 164.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Sifra:'
+        TabOrder = 0
+      end
+      object editSifra: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        StyleLookup = 'transparentedit'
+        TabOrder = 1
+        Password = True
+        Size.Width = 264.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object imeLinija: TLine
+      Align = Center
+      LineType = Bottom
+      Margins.Top = 100.000000000000000000
+      Size.Width = 264.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      object imeLabel: TLabel
+        Align = Top
+        StyledSettings = [FontColor]
+        Margins.Right = 100.000000000000000000
+        Size.Width = 164.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Ime:'
+        TabOrder = 0
+      end
+      object editIme: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        StyleLookup = 'transparentedit'
+        TabOrder = 1
+        Size.Width = 264.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object prezimeLinija: TLine
+      Align = Center
+      LineType = Bottom
+      Margins.Top = 200.000000000000000000
+      Size.Width = 264.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      object labelPrezime: TLabel
+        Align = Top
+        StyledSettings = [FontColor]
+        Margins.Right = 100.000000000000000000
+        Size.Width = 164.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Prezime:'
+        TabOrder = 0
+      end
+      object editPrezime: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        StyleLookup = 'transparentedit'
+        TabOrder = 1
+        Size.Width = 264.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object emailLinija: TLine
+      Align = Center
+      LineType = Bottom
+      Margins.Top = 300.000000000000000000
+      Size.Width = 264.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      object labelEmail: TLabel
+        Align = Top
+        StyledSettings = [FontColor]
+        Margins.Right = 100.000000000000000000
+        Size.Width = 164.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = '(Default)'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Email:'
+        TabOrder = 0
+      end
+      object editEmail: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        StyleLookup = 'transparentedit'
+        TabOrder = 1
+        Size.Width = 264.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object buttonRegister: TButton
+      Align = Center
+      Margins.Top = 560.000000000000000000
+      TabOrder = 0
+      Text = 'Register'
+      TextSettings.Trimming = None
+      OnClick = buttonRegisterClick
+    end
+    object cbPrikaziSifru: TCheckBox
+      Align = Center
+      Margins.Top = 480.000000000000000000
+      Margins.Right = 160.000000000000000000
+      TabOrder = 2
+      Text = 'Prikazi sifru!'
+      OnChange = cbPrikaziSifruChange
+    end
+    object Text1: TText
+      Align = Center
+      Margins.Bottom = 340.000000000000000000
+      Size.Width = 192.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Register'
+      TextSettings.Font.Family = '(Default)'
+      TextSettings.Font.Size = 36.000000000000000000
+    end
+  end
+end
